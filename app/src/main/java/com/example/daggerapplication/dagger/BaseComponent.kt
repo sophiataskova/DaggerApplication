@@ -4,7 +4,7 @@ import com.example.daggerapplication.dagger.scopes.ApplicationScope
 import dagger.Component
 
 @ApplicationScope
-@Component(modules = [NetworkModule::class])
+@Component(modules = [SampleModule::class])
 interface BaseComponent {
-    val requestMaker: RequestMaker
+    val randomMaker: RandomMaker
 }

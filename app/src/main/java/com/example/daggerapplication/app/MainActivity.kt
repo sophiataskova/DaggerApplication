@@ -13,10 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val component = DaggerBaseComponent.builder().build()
 
-        val a = component.requestMaker.specialRandom
-        val b = component.requestMaker.specialRandom
-
-        val c = component.requestMaker.retrofit
+        val a = component.randomMaker.specialRandom
+        val b = component.randomMaker.specialRandom
 
         findViewById<TextView>(R.id.hi).text = "a = $a and b = $b"
     }
